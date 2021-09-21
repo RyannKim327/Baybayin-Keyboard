@@ -1,0 +1,59 @@
+@font-face{
+	font-family: a;
+	src:url("font url");
+}
+body{
+	font-family: a;
+	background-color: #ffffff;
+	color: #000000;
+}
+td{
+	width: 10%;
+	height: 50px;
+}
+.a,#a{
+	font-family: a;
+}
+.a{
+	cursor: pointer;
+	padding: 3px;
+	margin: 5px;
+	user-select: none;
+	font-size: 2.5em;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(33,33,33,0.5);
+}
+.a:active{
+	box-shadow: 3px 3px 3px rgba(100,100,100,0.5);
+}
+#a{
+	cursor: text;
+	font-size: 2em;
+	background-color: #dddddd;
+	border-width: 0;
+	display: block;
+	width: 100%;
+}
+#a:disabled{
+	color: #000;
+}
+#a::placeholder{
+	color: #000;
+}
+.b{
+	background-color: #dddddd;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	color: #000000;
+	box-shadow: 5px 5px 5px #333333;
+}
+.c{
+	font-size: 1pc;
+}
+.d{
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 3px rgba(33,33,33,0.5);
+}
