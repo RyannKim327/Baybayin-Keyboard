@@ -1,9 +1,9 @@
 @font-face{
-	font-family: a;
+	font-family: my_font;
 	src:url("SulatBaybayinSerif.otf");
 }
 body{
-	font-family: a;
+	font-family: my_font !important;
 	background-color: #ffffff;
 	color: #000000;
 }
@@ -12,7 +12,7 @@ td{
 	height: 50px;
 }
 .a,#a{
-	font-family: a;
+	font-family: my_font !important;
 }
 .a{
 	cursor: pointer;
