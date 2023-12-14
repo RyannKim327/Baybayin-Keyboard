@@ -4,66 +4,54 @@
 		<title>Baybayin Text Generator</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
 		<link rel="icon" type="logo/png" href="araw.png">
-		<link rel="stylesheet" type="text/css" href="a.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		<div class="b">
-			<div class="d">
-				<center>
-					<h3 style="font-family: serif;">Welcome to</h3>
-					<h4 style="font-family: monospace;">Sulat Baybayin text Generator</h4>
-					<h5 style="font-size: 1vw; font-family: monospace;">Developed by RySes</h5>
-				</center>
-			</div>
-			<center>
-				<fieldset style="border-radius: 5px;">
-					<legend style="background-color: #dddddd;">Enter your text here:</legend>
-					<input onchange="d()" type="text" id="a" placeholder="Enter your text here">
+		<main>
+			<header>
+				<h3 style="font-family: serif;">Welcome to</h3>
+				<h4 style="font-family: 'Courier New', Courier, monospace;">Sulat Baybayin</h4>
+			</header>
+			<div class="base">
+				<fieldset>
+					<legend>Enter your text here</legend>
+					<input type="text" id="input">
 				</fieldset>
-				<table>
-					<caption id="b"></caption>
-					<tr>
-						<td onclick="a('&#5888;');" class="a"><center>&#5888;<label class="c"><br>A</label></center></td>
-						<td onclick="a('&#5889;');" class="a"><center>&#5889;<label class="c"><br>E</label></center></td>
-						<td onclick="a('&#5890;');" class="a"><center>&#5890;<label class="c"><br>O</label></center></td>
-						<td onclick="a('&#5898;');" class="a"><center>&#5898;<label class="c"><br>Ba</label></center></td>
-						<td onclick="a('&#5891;');" class="a"><center>&#5891;<label class="c"><br>Ka</label></center></td>
-						<td onclick="a('&#5895;');" class="a"><center>&#5895;<label class="c"><br>Da</label></center></td>
-						<td onclick="a('&#5892;');" class="a"><center>&#5892;<label class="c"><br>Ga</label></center></td>
-						<td onclick="a('&#5905;');" class="a"><center>&#5905;<label class="c"><br>Ha</label></center></td>
-						<td onclick="a('&#5902;');" class="a"><center>&#5902;<label class="c"><br>La</label></center></td>
-					</tr>
-					<tr>
-						<td onclick="a('&#5899;');" class="a"><center>&#5899;<label class="c"><br>Ma</label></center></td>
-						<td onclick="a('&#5896;');" class="a"><center>&#5896;<label class="c"><br>Na</label></center></td>
-						<td onclick="a('&#5893;');" class="a"><center>&#5893;<label class="c"><br>Nga</label></center></td>
-						<td onclick="a('&#5897;');" class="a"><center>&#5897;<label class="c"><br>Pa</label></center></td>
-						<td onclick="a('&#5901;');" class="a"><center>&#5901;<label class="c"><br>Ra</label></center></td>
-						<td onclick="a('&#5904;');" class="a"><center>&#5904;<label class="c"><br>Sa</label></center></td>
-						<td onclick="a('&#5894;');" class="a"><center>&#5894;<label class="c"><br>Ta</label></center></td>
-						<td onclick="a('&#5903;');" class="a"><center>&#5903;<label class="c"><br>Wa</label></center></td>
-						<td onclick="a('&#5900;');" class="a"><center>&#5900;<label class="c"><br>Ya</label></center></td>
-					</tr>
-					<tr>
-						<td onclick="a('&#5906;');" class="a"><center>&emsp;&#5906;<label class="c"><br>*e</label></center></td>
-						<td onclick="a('&#5907;');" class="a"><center>&emsp;&#5907;<label class="c"><br>*o</label></center></td>
-						<td onclick="a('&#5908;');" class="a"><center>&emsp;&#5908;<label class="c"><br>virama</label></center></td>
-						<td onclick="a('&#5942;');" class="a"><center>&#5942;<label class="c"><br>.</label></center></td>
-						<td onclick="a('&#5941;');" class="a"><center>&#5941;<label class="c"><br>,</label></center></td>
-						<td onclick="a('&#32;');" class="a"><center>&emsp;&#32;<label class="c"><br>agwat</label></center></td>
-						<td onclick="a('\n');" class="a"><center>\n</center></td>
-						<td onclick="b();" class="a"><center>←<label class="c"><br>bawas</label></center></td>
-						<td onclick="c();" class="a"><center>clear<label class="c"><br>bura</label></center></td>
-					</tr>
-				</table>
-			</center>
-			<div class="d">
-				<center>
-					<p style="font-size: 1vw;font-family: monospace; font-weight: bolder;">Code by RySes</p>
-					<p style="font-size: 1vw;font-family: monospace; font-weight: bolder;">A web based application developed for those who want to learn baybayin, and also wrote content using baybayin.</p>
-				</center>
+				<div class="keyboard">
+					<span style="grid-area: a;" class="card" onclick="keysClick(this)"><h3>&#5888;</h3>A</span>
+					<span style="grid-area: e;" class="card" onclick="keysClick(this)"><h3>&#5889;</h3>E</span>
+					<span style="grid-area: o;" class="card" onclick="keysClick(this)"><h3>&#5890;</h3>O</span>
+					<span style="grid-area: b;" class="card" onclick="keysClick(this)"><h3>&#5898;</h3>Ba</span>
+					<span style="grid-area: k;" class="card" onclick="keysClick(this)"><h3>&#5891;</h3>Ka</span>
+					<span style="grid-area: d;" class="card" onclick="keysClick(this)"><h3>&#5895;</h3>Da</span>
+					<span style="grid-area: g;" class="card" onclick="keysClick(this)"><h3>&#5892;</h3>Ga</span>
+					<span style="grid-area: h;" class="card" onclick="keysClick(this)"><h3>&#5905;</h3>Ha</span>
+					<span style="grid-area: l;" class="card" onclick="keysClick(this)"><h3>&#5902;</h3>La</span>
+					<span style="grid-area: m;" class="card" onclick="keysClick(this)"><h3>&#5899;</h3>Ma</span>
+					<span style="grid-area: n;" class="card" onclick="keysClick(this)"><h3>&#5896;</h3>Na</span>
+					<span style="grid-area: ng;" class="card" onclick="keysClick(this)"><h3>&#5893;</h3>Nga</span>
+					<span style="grid-area: p;" class="card" onclick="keysClick(this)"><h3>&#5897;</h3>Pa</span>
+					<span style="grid-area: r;" class="card" onclick="keysClick(this)"><h3>&#5901;</h3>Ra</span>
+					<span style="grid-area: s;" class="card" onclick="keysClick(this)"><h3>&#5904;</h3>Sa</span>
+					<span style="grid-area: t;" class="card" onclick="keysClick(this)"><h3>&#5894;</h3>Ta</span>
+					<span style="grid-area: w;" class="card" onclick="keysClick(this)"><h3>&#5903;</h3>Wa</span>
+					<span style="grid-area: y;" class="card" onclick="keysClick(this)"><h3>&#5900;</h3>Ya</span>
+
+					<span style="grid-area: _e;" class="card" onclick="keysClick(this)"><h3>&#5898;&#5906;</h3>*e</span>
+					<span style="grid-area: _o;" class="card" onclick="keysClick(this)"><h3>&#5898;&#5907;</h3>*o</span>
+					<span style="grid-area: _d;" class="card" onclick="keysClick(this)"><h3>&#5942;</h3>.</span>
+					<span style="grid-area: _k;" class="card" onclick="keysClick(this)"><h3>&#5941;</h3>,</span>
+					<!-- <span style="grid-area: _n;" class="card" onclick="keysClick(this)">\n</span> -->
+					<span style="grid-area: _s;" class="card" onclick="keysClick(this)"><h3></h3>agwat</span>
+					<span style="grid-area: _a;" class="card" onclick="keysClick(this)"><h3>&#5898;&#5908;</h3>Virama</span>
+					<span style="grid-area: _b;" class="card" onclick="bura()"><h3> </h3>Bura</span>
+					<span style="grid-area: _c;" class="card" onclick="pugnaw()"><h3> </h3>Pugnaw</span>
+				</div>
 			</div>
-		</div>
+			<footer>
+				<h3 style="font-family: 'Times New Roman', Times, serif;">Developed by RyannKim327</h3>
+			</footer>
+		</main>
 	</body>
-	<script type="text/javascript" src="a.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </html>

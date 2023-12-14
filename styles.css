@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "baybayin";
+	src: url("SulatBaybayinSerif.otf");
+}
+
+:root{
+	--backgroundColor: #333333;
+	--color: #ffffff;
+	--shadowColor: #000000;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	outline: none;
+	border: 0;
+	font-family: 'baybayin';
+}
+
+body{
+	background-color: var(--backgroundColor);
+	color: var(--color);
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 1px white solid;
+	text-align: center;
+}
+
+main > *, #input{
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+main > .base > fieldset{
+	border: 1px var(--color) solid;
+	border-radius: 5px;
+	margin: .5em;
+}
+main > .base > fieldset > legend{
+	border: 1px var(--color) solid;
+	border-radius: 5px;
+	padding: .1em .5em;
+	font-size: smaller;
+	text-align: left;
+	margin-left: 10px;
+}
+
+#input{
+	background-color: transparent;
+	color: var(--color);
+	text-align: center;
+	font-size: larger;
+}
+
+.card{
+	background-color: var(--backgroundColor);
+	box-shadow: 3px 3px 5px var(--shadowColor),
+	3px 3px 5px inset var(--color);
+	border-radius: .25em;
+	padding: .5em;
+}
+
+.keyboard{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-areas: 
+	"a e o b k d g h l"
+	"m n ng p r s t w y"
+	"_e _o _d _k _s _s _a _b _c";
+	width: 100%;
+	padding: 8px;
+	grid-gap: 8px;
+	text-align: center;
+}
