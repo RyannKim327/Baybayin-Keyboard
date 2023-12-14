@@ -80,3 +80,7 @@ main > .base > fieldset > legend{
 	grid-gap: 8px;
 	text-align: center;
 }
+
+.keyboard > h3{
+	font-weight: lighter;
+}
